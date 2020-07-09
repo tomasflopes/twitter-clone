@@ -11,6 +11,8 @@ import {
   EditButton,
 } from './styles';
 
+import Feed from '../Feed';
+
 const ProfilePage: React.FC = () => {
   return (
     <Container>

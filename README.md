@@ -30,7 +30,7 @@ yarn run test
 
 👤 **Tomás Lopes**
 
-* Website: [tomaslopes.codes](https://tomaslopes.codes);
+* Website: [tomaslopes.codes](https://tomaslopes.codes)
 * Twitter: [@tomas050302](https://twitter.com/tomas050302)
 
 ## Show your support
