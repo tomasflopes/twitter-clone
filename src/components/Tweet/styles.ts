@@ -21,7 +21,14 @@ export const Retweeted = styled.div`
   color: var(--gray);
 `;
 
-export const RetweetIcon = styled.div``;
+export const RetweetIcon = styled(Retweet)`
+  display: flex;
+  align-items: center;
+  height: 18px;
+  width: 19px;
+
+  color: var(--gray);
+`;
 
 export const Body = styled.div``;
 
@@ -29,7 +36,20 @@ export const Avatar = styled.div``;
 
 export const Content = styled.div``;
 
-export const Header = styled.div``;
+export const Header = styled.div`
+  display: flex;
+
+  width: 240px;
+  justify-content: space-around;
+
+  > span {
+    color: var(--gray);
+  }
+
+  > time {
+    color: var(--gray);
+  }
+`;
 
 export const Dot = styled.div``;
 
@@ -41,6 +61,12 @@ export const Icons = styled.div``;
 
 export const Status = styled.div``;
 
-export const CommentIcon = styled.div``;
+export const CommentIcon = styled(Chat)`
+  height: 15px;
+  width: 15px;
+`;
 
-export const LikeIcon = styled.div``;
+export const LikeIcon = styled(Favorite)`
+  height: 15px;
+  width: 15px;
+`;
