@@ -4,10 +4,12 @@ import {
   Home,
   Notifications,
   Email,
-  FavoriteBorder,
+  Bookmark,
+  List,
   Person,
   ExitToApp,
   Twitter,
+  Hashtag,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -136,6 +138,10 @@ export const HomeIcon = styled(Home)`
   ${iconCSS}
 `;
 
+export const ExploreIcon = styled(Hashtag)`
+  ${iconCSS}
+`;
+
 export const BellIcon = styled(Notifications)`
   ${iconCSS}
 `;
@@ -144,7 +150,11 @@ export const EmailIcon = styled(Email)`
   ${iconCSS}
 `;
 
-export const FavoriteIcon = styled(FavoriteBorder)`
+export const SavedIcon = styled(Bookmark)`
+  ${iconCSS}
+`;
+
+export const ListIcon = styled(List)`
   ${iconCSS}
 `;
 

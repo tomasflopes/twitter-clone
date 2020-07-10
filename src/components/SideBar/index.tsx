@@ -8,6 +8,8 @@ import {
   Body,
 } from './styles';
 
+import List from '../List';
+
 const SideBar: React.FC = () => {
   return (
     <Container>
@@ -17,12 +19,10 @@ const SideBar: React.FC = () => {
       </SearchWrapper>
 
       <Body>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
-          labore nesciunt quas iusto vitae numquam ipsum doloremque magnam
-          consequatur, totam alias aspernatur nihil fugiat. Expedita ducimus
-          consequatur soluta ad. Alias!
-        </p>
+        <List
+          title='Assuntos para você'
+          elements={[<h1>Test</h1>, <h1>Test</h1>, <h1>Test</h1>]}
+        />
       </Body>
     </Container>
   );
