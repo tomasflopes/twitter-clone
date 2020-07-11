@@ -37,5 +37,24 @@ yarn run test
 
 Give a ⭐️ if this project helped you!
 
+## Inspired by 
+
+* [Rocketseat Video](https://www.youtube.com/watch?v=K-8z_4xvT3o)
+
+## What I've learned
+
+* Typescript
+  * First Project with full TypeScript integration in React
+    * Props Interface
+  
+* Styled components
+  * Selectors
+  * Variables
+  * Encapsuling
+  
+* Responsiveness
+  * Media queries
+  * Displaying components accordingly to screen width
+
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
