@@ -76,4 +76,8 @@ export const Body = styled.div`
   padding: 57px 24px 200px;
 
   margin-top: 3px;
+
+  > div + div {
+    margin-top: 15px;
+  }
 `;

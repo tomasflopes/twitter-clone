@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { LocationOn, Cake } from '../../styles/Icons';
+import { LocationOn, Birthday, Calendar } from '../../styles/Icons';
 import Button from '../Button';
 
 export const Container = styled.div`
@@ -50,7 +50,7 @@ export const ProfileData = styled.div`
   position: relative;
 
   > h1 {
-    flex-weight: bold;
+    font-weight: bold;
     font-size: 19px;
   }
 
@@ -73,7 +73,8 @@ export const ProfileData = styled.div`
   > ul {
     list-style: none;
     margin-top: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
 
     > li {
       display: flex;
@@ -86,6 +87,15 @@ export const ProfileData = styled.div`
         margin-right: 5px;
       }
     }
+
+    > li + li {
+      margin-left: 20px;
+    }
+  }
+  > ul + ul {
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -99,7 +109,12 @@ const iconCSS = css`
 export const LocationIcon = styled(LocationOn)`
   ${iconCSS}
 `;
-export const CakeIcon = styled(Cake)`
+
+export const BirthdayIcon = styled(Birthday)`
+  ${iconCSS}
+`;
+
+export const CalendarIcon = styled(Calendar)`
   ${iconCSS}
 `;
 

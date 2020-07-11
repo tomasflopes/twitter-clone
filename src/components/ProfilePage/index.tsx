@@ -6,7 +6,8 @@ import {
   Avatar,
   ProfileData,
   LocationIcon,
-  CakeIcon,
+  BirthdayIcon,
+  CalendarIcon,
   Followage,
   EditButton,
 } from './styles';
@@ -23,7 +24,7 @@ const ProfilePage: React.FC = () => {
       <ProfileData>
         <EditButton outlined>Editar Perfil</EditButton>
 
-        <h1>Tomás Lopes</h1>
+        <h1>2+</h1>
         <h2>@tomas050302</h2>
 
         <p>maktub</p>
@@ -35,8 +36,15 @@ const ProfilePage: React.FC = () => {
           </li>
 
           <li>
-            <CakeIcon />
+            <BirthdayIcon />
             Nascido(a) em 5 de março de 2002
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <CalendarIcon />
+            Ingressou em 30 de fevereiro 2015
           </li>
         </ul>
 

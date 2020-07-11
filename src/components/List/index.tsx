@@ -1,22 +1,28 @@
 import React from 'react';
 
-import { Container, Item, Title } from './styles';
+import { Container, Item, Header, Title, SettingsIcon } from './styles';
 
 interface Props {
   title: string;
   elements: React.ReactNode[];
+  editable?: boolean;
 }
 
-const List: React.FC<Props> = ({ title, elements }) => {
+const List: React.FC<Props> = ({ title, elements, editable }) => {
   return (
     <Container>
-      <Item>
-        <Title>{title}</Title>
+      <div>
+        <Item>
+          <Header>
+            <Title>{title}</Title>
+            {editable ? <SettingsIcon /> : null}
+          </Header>
 
-        {elements.map((element, index) => (
-          <Item key={index}>{element}</Item>
-        ))}
-      </Item>
+          {elements.map((element, index) => (
+            <Item key={index}>{element}</Item>
+          ))}
+        </Item>
+      </div>
     </Container>
   );
 };

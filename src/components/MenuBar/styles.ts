@@ -10,6 +10,7 @@ import {
   ExitToApp,
   Twitter,
   Hashtag,
+  More,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -85,7 +86,7 @@ export const MenuButton = styled.button`
   margin-top: 8px;
 
   & + button {
-    margin-top: 16.5px;
+    margin-top: 8px;
   }
 
   & + button:last-child {
@@ -159,6 +160,10 @@ export const ListIcon = styled(List)`
 `;
 
 export const ProfileIcon = styled(Person)`
+  ${iconCSS}
+`;
+
+export const MoreIcon = styled(More)`
   ${iconCSS}
 `;
 

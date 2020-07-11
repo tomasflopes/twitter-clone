@@ -12,6 +12,7 @@ import {
   SavedIcon,
   ListIcon,
   ProfileIcon,
+  MoreIcon,
   Botside,
   Avatar,
   ProfileData,
@@ -59,6 +60,11 @@ const MenuBar: React.FC = () => {
         <MenuButton className='active'>
           <ProfileIcon />
           <span>Perfil</span>
+        </MenuButton>
+
+        <MenuButton>
+          <MoreIcon />
+          <span>Mais</span>
         </MenuButton>
 
         <Button>
