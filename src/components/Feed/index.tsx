@@ -15,9 +15,9 @@ const Feed: React.FC = () => {
       </Tabs>
 
       <Tweets>
-        <Tweet />
-        <Tweet />
-        <Tweet />
+        <Tweet liked retweeted />
+        <Tweet liked />
+        <Tweet retweeted />
         <Tweet />
         <Tweet />
       </Tweets>

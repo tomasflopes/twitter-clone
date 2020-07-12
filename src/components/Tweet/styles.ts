@@ -2,6 +2,11 @@ import styled, { css } from 'styled-components';
 
 import { Chat, Favorite, Retweet } from '../../styles/Icons';
 
+interface Props {
+  liked?: boolean;
+  retweeted?: boolean;
+}
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -140,7 +145,7 @@ export const Icons = styled.div`
   }
 `;
 
-export const Status = styled.div`
+export const Status = styled.div<Props>`
   display: flex;
   align-items: center;
 
@@ -158,18 +163,18 @@ export const Status = styled.div`
   }
 
   &:nth-child(2) {
-    color: var(--retweet);
+    color: ${props => (props.retweeted ? 'var(--retweet)' : 'var(--gray)')};
 
     > svg path {
-      fill: var(--retweet);
+      fill: ${props => (props.retweeted ? 'var(--retweet)' : 'var(--gray)')};
     }
   }
 
   &:nth-child(3) {
-    color: var(--like);
+    color: ${props => (props.liked ? 'var(--like)' : 'var(--gray)')};
 
     > svg {
-      fill: var(--like);
+      fill: ${props => (props.liked ? 'var(--like)' : 'var(--gray)')};
     }
   }
 `;

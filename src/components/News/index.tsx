@@ -13,7 +13,7 @@ const News: React.FC<Props> = ({ message }) => {
       <strong>{message}</strong>
       <p>
         {Math.round(Math.random() * 10 + 1)}.
-        {Math.round(Math.random() * 1000 + 1)} Tweets
+        {Math.round(Math.random() * 1000 + 1).toFixed()} Tweets
       </p>
     </Container>
   );
