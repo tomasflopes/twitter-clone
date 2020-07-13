@@ -8,6 +8,12 @@
 
 > A Twitter Clone using ReactJS to test styled components and responsiveness
 
+## Demo
+
+<div align="center">
+  <img src="assets/48614c.gif" alt="Project Demo" width="420"/>
+</div>
+
 ## Install
 
 ```sh
