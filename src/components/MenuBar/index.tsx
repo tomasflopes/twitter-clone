@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import {
   Container,
@@ -22,6 +23,10 @@ import {
 import Button from '../Button';
 
 const MenuBar: React.FC = () => {
+  const location = useLocation();
+
+  console.log(location);
+
   return (
     <Container>
       <Topside>
@@ -42,9 +47,13 @@ const MenuBar: React.FC = () => {
           <span>Notificações</span>
         </MenuButton>
 
-        <MenuButton>
+        <MenuButton
+          className={location.pathname === '/messages' ? 'active' : ''}
+        >
           <EmailIcon />
-          <span>Mensagens</span>
+          <Link className='link-to' to='/messages'>
+            <span>Mensagens</span>
+          </Link>
         </MenuButton>
 
         <MenuButton>
@@ -57,9 +66,11 @@ const MenuBar: React.FC = () => {
           <span>Listas</span>
         </MenuButton>
 
-        <MenuButton className='active'>
+        <MenuButton className={location.pathname === '/' ? 'active' : ''}>
           <ProfileIcon />
-          <span>Perfil</span>
+          <Link className='link-to' to='/'>
+            <span>Perfil</span>
+          </Link>
         </MenuButton>
 
         <MenuButton>

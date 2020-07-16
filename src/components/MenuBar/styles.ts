@@ -65,12 +65,15 @@ export const MenuButton = styled.button`
   align-items: center;
   flex-shrink: 0;
 
-  > span {
+  > span,
+  .link-to {
     display: none;
   }
 
   @media (min-width: 1280px) {
-    > span {
+    > span,
+    .link-to {
+      text-decoration: none;
       display: inline;
       margin-left: 19px;
 

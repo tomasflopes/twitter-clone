@@ -20,4 +20,9 @@ export {
   Settings2Outline as Settings,
 } from 'styled-icons/evaicons-outline/';
 export { FileList as List } from 'styled-icons/remix-line/';
-export { Calendar } from 'styled-icons/boxicons-regular/';
+export {
+  Calendar,
+  MessageAdd,
+  InfoCircle,
+  ChevronRight,
+} from 'styled-icons/boxicons-regular/';
