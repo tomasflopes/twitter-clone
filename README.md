@@ -53,6 +53,10 @@ Give a ⭐️ if this project helped you!
   * First Project with full TypeScript integration in React
     * Props Interface
   
+* React Router DOM
+  * Handle Routes
+  * Dynamic styling according to route in side bar
+
 * Styled components
   * Selectors
   * Variables
