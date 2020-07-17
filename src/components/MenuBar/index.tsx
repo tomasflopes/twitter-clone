@@ -44,10 +44,14 @@ const MenuBar: React.FC = () => {
           <span>Explorar</span>
         </MenuButton>
 
-        <MenuButton>
-          <BellIcon />
-          <span>Notificações</span>
-        </MenuButton>
+        <Link className='link-to' to='/notifications'>
+          <MenuButton
+            className={location.pathname === '/notifications' ? 'active' : ''}
+          >
+            <BellIcon />
+            <span>Notificações</span>
+          </MenuButton>
+        </Link>
 
         <Link className='link-to' to='/messages'>
           <MenuButton
