@@ -32,10 +32,12 @@ const MenuBar: React.FC = () => {
       <Topside>
         <Logo />
 
-        <MenuButton>
-          <HomeIcon />
-          <span>Página Inicial</span>
-        </MenuButton>
+        <Link className='link-to' to='/'>
+          <MenuButton className={location.pathname === '/' ? 'active' : ''}>
+            <HomeIcon />
+            <span>Página Inicial</span>
+          </MenuButton>
+        </Link>
 
         <MenuButton>
           <ExploreIcon />
@@ -66,8 +68,10 @@ const MenuBar: React.FC = () => {
           <span>Listas</span>
         </MenuButton>
 
-        <Link className='link-to' to='/'>
-          <MenuButton className={location.pathname === '/' ? 'active' : ''}>
+        <Link className='link-to' to='/profile'>
+          <MenuButton
+            className={location.pathname === '/profile' ? 'active' : ''}
+          >
             <ProfileIcon />
             <span>Perfil</span>
           </MenuButton>

@@ -31,3 +31,6 @@ export {
 export { Gallery } from 'styled-icons/remix-fill/';
 export { PaperAirplane as PaperPlane } from 'styled-icons/octicons/';
 export { EmojiHappy as Emoji } from 'styled-icons/entypo/';
+
+export { StarS as Star } from 'styled-icons/remix-line/';
+export { BarChartAlt2 as Stats } from 'styled-icons/boxicons-solid/';

@@ -1,9 +1,21 @@
 import React from 'react';
 
-import Layout from '../../components/Layout';
+import Main from '../../components/Main';
+import MenuBar from '../../components/MenuBar';
+import SideBar from '../../components/SideBar';
+
+import { Container, Wrapper } from './styles';
 
 const Profile: React.FC = () => {
-  return <Layout />;
+  return (
+    <Container>
+      <Wrapper>
+        <MenuBar />
+        <Main />
+        <SideBar />
+      </Wrapper>
+    </Container>
+  );
 };
 
 export default Profile;

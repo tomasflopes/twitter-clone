@@ -13,6 +13,7 @@ import {
 } from './styles';
 
 import Feed from '../Feed';
+import ProfileTabs from '../ProfileTabs';
 
 const ProfilePage: React.FC = () => {
   return (
@@ -58,6 +59,7 @@ const ProfilePage: React.FC = () => {
         </Followage>
       </ProfileData>
 
+      <ProfileTabs />
       <Feed />
     </Container>
   );
