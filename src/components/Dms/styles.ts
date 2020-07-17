@@ -5,6 +5,10 @@ import {
   InfoCircle,
   ChevronRight,
   Search,
+  Gallery,
+  Gif,
+  PaperPlane,
+  Emoji,
 } from '../../styles/Icons';
 
 export const Container = styled.div`
@@ -118,6 +122,9 @@ export const SearchInput = styled.input`
 
 export const MainContent = styled.div`
   flex: 6;
+
+  display: flex;
+  flex-direction: column;
 `;
 
 export const MainContentHeader = styled.div`
@@ -149,20 +156,93 @@ export const PersonInfo = styled.div`
   }
 `;
 
-export const InfoIconWrapper = styled.div`
-  cursor: pointer;
-  border-radius: 25px;
-
-  &:hover {
-    background: var(--twitter-dark-hover);
-  }
-`;
-
 export const InfoIcon = styled(InfoCircle)`
   ${iconCSS}
   fill: var(--twitter);
+
+  cursor: pointer;
 `;
 
-export const MessagesWrapper = styled.div``;
+export const MessagesWrapper = styled.div`
+  height: calc(100% - 55px);
+  padding: 0 8px 15px 10px;
 
-export const Message = styled.div``;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+`;
+
+export const TypeMessage = styled.div`
+  position: sticky;
+  bottom: 0;
+  display: flex;
+
+  border-top: 1px solid var(--gray);
+
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+
+  padding: 8px;
+`;
+
+const sendMessageIconsCSS = css`
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  fill: var(--twitter);
+
+  cursor: pointer;
+`;
+
+export const GalleryIcon = styled(Gallery)`
+  ${sendMessageIconsCSS}
+`;
+
+export const GifIconBox = styled.div`
+  border: 1.5px solid var(--twitter);
+  border-radius: 5px;
+`;
+
+export const GifIcon = styled(Gif)`
+  ${sendMessageIconsCSS}
+`;
+
+export const MessageInputWrapper = styled.div`
+  display: flex;
+  position: relative;
+
+  align-items: center;
+  width: 80%;
+  height: 100%;
+`;
+
+export const MessageInput = styled.input`
+  background: var(--secondary);
+  width: 100%;
+  height: 100%;
+
+  &::placeholder {
+    font-size: 15px;
+    color: var(--white);
+  }
+
+  padding: 5px 12px;
+  border-radius: 25px;
+  outline: 0;
+
+  &:focus {
+    border: 1px solid var(--twitter);
+  }
+`;
+
+export const EmojiIcon = styled(Emoji)`
+  ${sendMessageIconsCSS}
+  position: absolute;
+  right: 10px;
+`;
+
+export const SendIcon = styled(PaperPlane)`
+  ${sendMessageIconsCSS}
+`;

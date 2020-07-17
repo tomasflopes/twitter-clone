@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface Props {
+  active: Boolean;
+}
+
+export const Container = styled.div<Props>`
   display: flex;
 
   padding: 15px 12px;
 
   border-bottom: 1px solid var(--gray);
+
+  ${props => (props.active ? `border-right: 4px solid var(--twitter)` : null)};
 `;
 
 export const Avatar = styled.div`

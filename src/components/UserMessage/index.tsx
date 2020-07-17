@@ -10,9 +10,13 @@ import {
   Timestamp,
 } from './styles';
 
-const UserMessage: React.FC = () => {
+interface Props {
+  active?: Boolean;
+}
+
+const UserMessage: React.FC<Props> = ({ active }) => {
   return (
-    <Container>
+    <Container active={active || false}>
       <Avatar />
       <Content>
         <Information>

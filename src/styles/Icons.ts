@@ -7,6 +7,7 @@ export {
   LocationOn,
   Search,
   MoreHoriz as More,
+  Gif,
 } from 'styled-icons/material-outlined';
 
 export { Person, Cake as Birthday, Favorite } from 'styled-icons/material';
@@ -26,3 +27,7 @@ export {
   InfoCircle,
   ChevronRight,
 } from 'styled-icons/boxicons-regular/';
+
+export { Gallery } from 'styled-icons/remix-fill/';
+export { PaperAirplane as PaperPlane } from 'styled-icons/octicons/';
+export { EmojiHappy as Emoji } from 'styled-icons/entypo/';
