@@ -24,16 +24,6 @@ const SideBar: React.FC = () => {
       <StickyBox>
         <Body>
           <List
-            title='Talvêz você curta'
-            elements={[
-              <FollowSuggestion name='2+' nickname='@tomas050302' />,
-              <FollowSuggestion name='2+' nickname='@tomas050302' />,
-              <FollowSuggestion name='2+' nickname='@tomas050302' />,
-              <FollowSuggestion name='2+' nickname='@tomas050302' />,
-            ]}
-          />
-
-          <List
             editable
             title='Assuntos para você'
             elements={[
@@ -44,6 +34,16 @@ const SideBar: React.FC = () => {
               <News message={'Cenas que acontecem no mundo'} />,
               <News message={'Cenas que acontecem no mundo'} />,
               <News message={'Cenas que acontecem no mundo'} />,
+            ]}
+          />
+
+          <List
+            title='Quem seguir'
+            elements={[
+              <FollowSuggestion name='2+' nickname='@tomas050302' />,
+              <FollowSuggestion name='2+' nickname='@tomas050302' />,
+              <FollowSuggestion name='2+' nickname='@tomas050302' />,
+              <FollowSuggestion name='2+' nickname='@tomas050302' />,
             ]}
           />
         </Body>

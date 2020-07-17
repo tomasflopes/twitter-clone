@@ -44,7 +44,7 @@ export const Header = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 8px;
+  padding: 0 12px;
 
   > h1 {
     font-size: 20px;
@@ -76,7 +76,7 @@ export const Avatar = styled.div`
   border-radius: 50%;
   flex-shrink: 0;
 
-  margin-top: 5px;
+  margin-top: 3px;
 
   background: var(--gray);
 `;
@@ -137,7 +137,10 @@ export const ScheduleIcon = styled(Calendar)`
 
 export const TweetButton = styled.button`
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 10px 18px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 
   background: var(--twitter);
 `;

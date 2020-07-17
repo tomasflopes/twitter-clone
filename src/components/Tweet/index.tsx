@@ -18,12 +18,14 @@ import {
   LikeIcon,
 } from './styles';
 
+import DmIcon from '../../assets/DmIcon';
 interface Props {
   liked?: boolean;
   retweeted?: boolean;
+  image?: boolean;
 }
 
-const Tweet: React.FC<Props> = ({ liked, retweeted }) => {
+const Tweet: React.FC<Props> = ({ liked, retweeted, image }) => {
   return (
     <Container>
       {retweeted ? (
@@ -46,7 +48,7 @@ const Tweet: React.FC<Props> = ({ liked, retweeted }) => {
 
           <Description>Sup yo</Description>
 
-          <ImageContent />
+          {image ? <ImageContent /> : null}
 
           <Icons>
             <Status>
@@ -62,6 +64,10 @@ const Tweet: React.FC<Props> = ({ liked, retweeted }) => {
             <Status liked={liked}>
               <LikeIcon />
               861
+            </Status>
+
+            <Status>
+              <DmIcon />
             </Status>
           </Icons>
         </Content>

@@ -8,11 +8,11 @@ const Feed: React.FC = () => {
   return (
     <Container>
       <Tweets>
-        <Tweet liked retweeted />
-        <Tweet liked />
-        <Tweet retweeted />
-        <Tweet />
-        <Tweet />
+        <Tweet image liked retweeted />
+        <Tweet image liked />
+        <Tweet image retweeted />
+        <Tweet image />
+        <Tweet image />
       </Tweets>
     </Container>
   );
