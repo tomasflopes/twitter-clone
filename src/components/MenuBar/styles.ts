@@ -44,6 +44,10 @@ export const Topside = styled.div`
   flex-direction: column;
   align-items: center;
 
+  > .link-to {
+    text-decoration: none;
+  }
+
   @media (min-width: 1280px) {
     align-items: flex-start;
   }
@@ -65,14 +69,12 @@ export const MenuButton = styled.button`
   align-items: center;
   flex-shrink: 0;
 
-  > span,
-  .link-to {
+  > span {
     display: none;
   }
 
   @media (min-width: 1280px) {
-    > span,
-    .link-to {
+    > span {
       text-decoration: none;
       display: inline;
       margin-left: 19px;

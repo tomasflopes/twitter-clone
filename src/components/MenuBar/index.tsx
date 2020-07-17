@@ -47,14 +47,14 @@ const MenuBar: React.FC = () => {
           <span>Notificações</span>
         </MenuButton>
 
-        <MenuButton
-          className={location.pathname === '/messages' ? 'active' : ''}
-        >
-          <EmailIcon />
-          <Link className='link-to' to='/messages'>
+        <Link className='link-to' to='/messages'>
+          <MenuButton
+            className={location.pathname === '/messages' ? 'active' : ''}
+          >
+            <EmailIcon />
             <span>Mensagens</span>
-          </Link>
-        </MenuButton>
+          </MenuButton>
+        </Link>
 
         <MenuButton>
           <SavedIcon />
@@ -66,12 +66,12 @@ const MenuBar: React.FC = () => {
           <span>Listas</span>
         </MenuButton>
 
-        <MenuButton className={location.pathname === '/' ? 'active' : ''}>
-          <ProfileIcon />
-          <Link className='link-to' to='/'>
+        <Link className='link-to' to='/'>
+          <MenuButton className={location.pathname === '/' ? 'active' : ''}>
+            <ProfileIcon />
             <span>Perfil</span>
-          </Link>
-        </MenuButton>
+          </MenuButton>
+        </Link>
 
         <MenuButton>
           <MoreIcon />
